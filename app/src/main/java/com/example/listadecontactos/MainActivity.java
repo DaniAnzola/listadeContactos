@@ -13,11 +13,17 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 
 public class MainActivity extends AppCompatActivity {
     public Button btnAnadir;
+    private EditText etNombreC, etNumeroC, etCorreoC;
+    private Button btnCrearC;
+    private ImageView ivFotoContacto;
+    public static final int PICK_IMAGE = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,23 +62,15 @@ public class MainActivity extends AppCompatActivity {
 
                 popupWindow.showAtLocation(view, Gravity.CENTER, 0, 0);
                 Button  btnS = popupView.findViewById(R.id.btnSiguiente);
-                btnS.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Intent i = new Intent(MainActivity.this, pop.class);
-                        startActivity(i);
-                    }
-                });
-                popupView.setOnTouchListener(new View.OnTouchListener() {
 
-                    public boolean onTouch(View view, MotionEvent motionEvent) {
-                        popupWindow.dismiss();
-                        return true;
-                    }
+                etNombreC=popupView.findViewById(R.id.etNombreC);
+                etNumeroC=popupView.findViewById(R.id.etNumeroC);
+                etNombreC=popupView.findViewById(R.id.etNombreC);
 
-                });
 
-            }
+
+                };
+
         });
     }
 }

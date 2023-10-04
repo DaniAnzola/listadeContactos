@@ -85,7 +85,7 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
             this.tvCorreo=(TextView) itemView.findViewById(R.id.tvCorreo);
 
             this.btnBorrar=(Button)itemview.findViewById(R.id.btBorrar);
-            this.btnLlamar=(Button)itemview.findViewById(R.id.btnLlamar);
+            this.btnLlamar=(Button)itemview.findViewById(R.id.btnLlamar);           
 
 
             this.llTotal=(LinearLayout) itemview.findViewById(R.id.llTotal);
