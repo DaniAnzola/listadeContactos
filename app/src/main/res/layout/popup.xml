@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:background="#99E1DF"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tvTitulo"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:text="Añadir Contacto " />
+
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvCorreo"
+        android:layout_height="wrap_content"
+        android:text="Añadir Contacto" />
+
+    <EditText
+        android:id="@+id/tvNombre"
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Nombre" />
+
+    <EditText
+        android:id="@+id/tvNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNombre"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Numero" />
+
+    <EditText
+        android:id="@+id/tvCorreo"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/tvNumero"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Correo" />
+</RelativeLayout>
