@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:orientation="horizontal"
-    android:background="#99E1DF"
+    android:background="#E0F7F7"
     android:layout_height="wrap_content">
 
     <TextView
@@ -16,7 +16,7 @@
         android:text="Añadir Contacto " />
 
     <Button
-        android:id="@+id/btnSiguiente"
+        android:id="@+id/btnCrearC"
         android:layout_width="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/etCorreoC"
@@ -52,9 +52,9 @@
 
     <ImageView
         android:id="@+id/ivFotoContacto"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_below="@+id/tvTitulo"
         android:layout_centerHorizontal="true"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         app:srcCompat="@android:drawable/ic_menu_crop" />
 </RelativeLayout>

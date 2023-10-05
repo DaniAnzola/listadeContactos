@@ -1,5 +1,7 @@
 package com.example.listadecontactos;
 
+import android.net.Uri;
+
 public class lista_Contactos {
 
 
@@ -8,14 +10,40 @@ public class lista_Contactos {
     private String numTelf;
 
     private int foto;
-
+    private Uri imagen;
+private int flag;
     private String correo;
 
-    public lista_Contactos(String nombre, String numTelf, int foto, String correo) {
+    public int getFlag() {
+        return flag;
+    }
+
+    public void setFlag(int flag) {
+        this.flag = flag;
+    }
+
+    public lista_Contactos(String nombre, String numTelf, Uri imagen, String correo,int flag) {
+        this.nombre = nombre;
+        this.numTelf = numTelf;
+        this.imagen = imagen;
+        this.correo = correo;
+        this.flag=flag;
+    }
+
+    public Uri getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(Uri imagen) {
+        this.imagen = imagen;
+    }
+
+    public lista_Contactos(String nombre, String numTelf, int foto, String correo,int flag) {
         this.nombre = nombre;
         this.numTelf = numTelf;
         this.foto = foto;
         this.correo = correo;
+        this.flag=flag;
     }
 
     public String getNombre() {
